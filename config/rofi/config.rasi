@@ -1,0 +1,107 @@
+configuration {
+	modi: "run,drun,window";
+	font: "JetBrainsMono Nerd Font 11";
+	show-icons: false;
+	icon-theme: "Papirus";
+	terminal: "alacritty";
+	drun-display-format: "{icon} {name}";
+	location: 0;
+	disable-history: false;
+	hide-scrollbar: true;
+	display-drun: " 📱 Apps ";
+	display-run: " 🏃 Run ";
+	display-window: " 🪟 Window ";
+	sidebar-mode: true;
+}
+
+* {
+	bg-col: #000000;
+	bg-col-light: #111111;
+	border-col: #222222;
+	selected-col: #111111;
+	fg-col: #ffffff;
+	fg-col-dist: #666666;
+
+	width: 600;
+	font: "monospace 11";
+	background-color: @bg-col;
+}
+
+	window {
+	height: 360;
+	border: 1px;
+	border-color: @border-col;
+	background-color: @bg-col;
+}
+
+	mainbox {
+	background-color: @bg-col;
+}
+
+	inputbar {
+	children: [promt,entry];
+	background-color: @bg-col;
+	border-radius: 5px;
+	padding: 2px;
+}
+
+	prompt {
+	background-color: @bg-col-light;
+	padding: 6px;
+	text-color: @fg-col;
+	border-radius: 3px;
+	margin: 10px 0px 0px 10px;
+}
+
+	textbox-prompt-colon {
+	expand: false;
+	str: ":";
+}
+	entry {
+	padding: 6px;
+	margin: 10px 10px 0px 10px;
+	text-color: @fg-col;
+	background-color: @bg-col-light;
+}
+
+	listview {
+	border: 0px 0px 0px;
+	padding: 6px 0px 0px;
+	margin: 10px 10px 0px 20px;
+	columns: 1;
+	lines: 8;
+	background-color: @bg-col;
+}
+
+	element {
+	padding: 5px;
+	backrground-color: @bg-col;
+	text-color: @fg-col-dist;
+}
+
+	element-icon {
+	size: 25px;
+}
+
+	element selected { 
+	background-color: @selected-col;
+	text-color: @fg-col;
+}
+
+	mode-switcher {
+	spacing: 0;
+}
+
+	button {
+	padding: 10px;
+	background-color: @bg-col-light;
+	text-color: @fg-col-dist;
+	vertical-align: 0.5;
+	horizontal-align: 0.5;
+}
+
+	button selected {
+	background-color: @bg-col;
+	text-color: @fg-col;
+}
+

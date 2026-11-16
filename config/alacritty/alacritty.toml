@@ -1,0 +1,40 @@
+[general]
+
+# import = [
+#     # "~/.config/alacritty/themes/themes/gotham.toml"
+# ]
+
+[font]
+
+normal = { family = 'JetBrainsMono Nerd Font', style = 'Regular' }
+size = 11.25
+
+[colors]
+# Colors (e-ink dark)
+
+# Default colors
+[colors.primary]
+background =  '#333333'
+foreground =  '#c2c2c2'
+
+# Normal colors
+[colors.normal]
+black   = '#333333'
+red     = '#cccccc'
+yellow  = '#686868'
+green   = '#7c7c7c'
+blue    = '#868686'
+magenta = '#5e5e5e'
+cyan    = '#b8b8b8'
+white   = '#a4a4a4'
+
+# Bright colors
+[colors.bright]
+black   = '#a4a4a4'
+red     = '#cccccc'
+yellow  = '#686868'
+green   = '#7c7c7c'
+blue    = '#868686'
+magenta = '#5e5e5e'
+cyan    = '#b8b8b8'
+white   = '#868686'
